@@ -10,11 +10,13 @@
   <body>
     <div class="jumbotron">
       <h1>Hello, prospective travelers!</h1>
-      <p>Do you have the desire to see the world? Are you interested in learning more about new cultures? Do you want to have an adventure? Travel is good for you and you've found yourself here for a reason, so click below to learn more!</p>
+      <p>You want adventure. We can help.</p>
       <p><button class="btnjumbo btn-lg" type="button">Learn more</button>
       <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span></p>
     </div>
+
     <div class="container"> <!--Start of container-->
+
       <!--Questions-->
       <div class="questions">
         <form class="form">
@@ -23,10 +25,10 @@
           <div class="form-group">
             <label for="active">1. When you are on vacation, do you prefer to be:</label><br>
               <select class="active">
-                <option value="">Very active</option>
-                <option value="">Moderately active</option>
-                <option value="">Not very active</option>
-                <option value="">Sedentary</option>
+                <option value="v-active">Very active</option>
+                <option value="m-active">Moderately active</option>
+                <option value="n-active">Not very active</option>
+                <option value="sed">Sedentary</option>
               </select>
           </div>
 
@@ -34,10 +36,10 @@
           <div class="form-group">
             <label for="setting">2. Which of the following settings would you want to spend the most time:</label><br>
               <select class="setting">
-                <option value="">Big City</option>
-                <option value="">Beach</option>
-                <option value="">Jungle</option>
-                <option value="">Desert</option>
+                <option value="city">Big City</option>
+                <option value="beach">Beach</option>
+                <option value="jungle">Jungle</option>
+                <option value="desert">Desert</option>
               </select>
           </div>
 
@@ -80,6 +82,7 @@
               </div>
             </div>
           </div>
+
           <!--Carb Question-->
           <div class="form-group">
             <label for="carbs">4. Which of the following is your favorite type of carb to include in a meal:</label><br>
@@ -130,13 +133,46 @@
               </div>
             </div>
           </div>
+          <button class="btn btn-info" type="submit">Find Out Now!</button>
         </form>
       </div> <!--End of questions-->
 
       <!--Results-->
       <div class="results">
-        
-      </div>
+        <div class="salvador">
+          <h3>We suggest you travel to the coastal town Salvador in Bahia, Brazil!</h3>
+          <img src="img/salvador.jpg" alt="salvador"/>
+          <p>
+            Salvador is an old fishing town on the Brazil's beautiful Bahia coast. It is known for its picturesque beaches and laid back lifestyle. For more information on Salvador, please click <a href="http://www.tripadvisor.com/Tourism-g303272-Salvador_State_of_Bahia-Vacations.html">here</a>
+          </p>
+        </div>
+
+        <div class="madrid">
+          <h3>We Suggest You Travel to Madrid, the capital city of Spain!</h3>
+          <img src="img/madrid.jpg" alt="madrid"/>
+          <p>
+            Madrid is a large city known for its exemplary European art and culture. For more information on Salvador, please click <a href="http://www.tripadvisor.com/Tourism-g187514-Madrid-Vacations.html">here</a>
+          </p>
+        </div>
+
+        <div class="egypt">
+          <h3>We Suggest You Travel to the Blue Desert in Dahab, Egypt!</h3>
+          <img src="img/egypt.jpg" alt="egypt"/>
+          <p>
+            The Blue Desert is known for its beautifully painted blue rocks in the middle of the desert. Perfect for a desert safari! For more information, please click<a href="http://www.tripadvisor.com/Tourism-g297547-Dahab_South_Sinai_Red_Sea_and_Sinai-Vacations.html">here</a>
+          </p>
+        </div>
+
+        <div class="chiangmai">
+          <h3>We Suggest You Travel to Chiang Mai in mountainous northern Thailand!</h3>
+          <img src="img/chiangmai.jpg" alt="chiangmai"/>
+          <p>
+            Chiang Mai is known for its mountainous temples in northern Thailand. Perfect for relaxation and time away from the chaos of city life! For more information, please click<a href="http://www.tripadvisor.com/Tourism-g293917-Chiang_Mai-Vacations.html">here</a>
+          </p>
+        </div>
+      </div> <!--End of results-->
+
     </div> <!--End of container-->
+    
   </body>
 </html>

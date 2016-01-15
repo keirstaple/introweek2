@@ -1,7 +1,3 @@
-.questions {
-  display: none;
-}
-
 .jumbotron {
   background-color: #ffc34d;
   border: solid;
@@ -25,7 +21,33 @@
   font-size: 85px;
 }
 
+.container {
+  margin: 2%;
+  padding: 2%;
+}
+.questions {
+  display: none;
+  border: solid;
+  border-color: #f2f2f2;
+  border-radius: 3%;
+  background-color: #f2f2f2;
+  padding: 2%;
+}
+
 .radio img {
   width: 150px;
   height: 150px;
+}
+
+.results {
+  display: none;
+  border: solid;
+  border-color: #f2f2f2;
+  border-radius: 3%;
+  background-color: #f2f2f2;
+  padding: 2%;
+}
+
+.results img {
+  max-width: 300px;
 }
