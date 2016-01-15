@@ -19,6 +19,7 @@
 .glyphicon {
   float:right;
   font-size: 85px;
+  text-align: center;
 }
 
 .container {
@@ -38,6 +39,10 @@
   width: 150px;
   height: 150px;
 }
+
+/*.salvador, .egypt, .chiangmai, .madrid {
+  display: none;
+}*/
 
 .results {
   display: none;
