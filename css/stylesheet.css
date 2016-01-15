@@ -1,0 +1,31 @@
+.questions {
+  display: none;
+}
+
+.jumbotron {
+  background-color: #ffc34d;
+  border: solid;
+  border-color: #ff8080;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.btnjumbo {
+  background-color: #4db8ff;
+  border-color: #f2f2f2;
+}
+
+.btnjumbo:hover {
+  background-color: #4db8ff;
+  border-color: #f2f2f2;
+}
+
+.glyphicon {
+  float:right;
+  font-size: 85px;
+}
+
+.radio img {
+  width: 150px;
+  height: 150px;
+}
