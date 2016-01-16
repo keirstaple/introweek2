@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.btnjumbo').click(function() {
-    $('.questions').show();
+    $('.questions').toggle()
+    $('.results').hide()
   });
 
   $('.form').submit(function(event) {
@@ -11,113 +12,176 @@ $(document).ready(function() {
     var carbs = $('select.carbs').val();
     var celebrity = $('input[name=celebrity]:checked').val();
 
-    var points = null;
+    var salvadortotal = null;
+    var madridtotal = null;
+    var egypttotal= null;
+    var chiangmaitotal= null;
 
     //setting question//
 
     if (setting === 'jungle') {
-      points += 4;
+      chiangmaitotal += 3;
+      salvadortotal += 2;
+      egypttotal += 1;
+      madridtotal += 0;
     }
 
     else if (setting === 'city') {
-      points += 2;
+      chiangmaitotal += 1;
+      salvadortotal += 2;
+      egypttotal += 0;
+      madridtotal += 3;
     }
 
     else if (setting === 'beach') {
-      points += 1;
+      chiangmaitotal += 1;
+      salvadortotal += 3;
+      egypttotal += 0;
+      madridtotal += 2;
     }
 
     else {
-      points += 3;
+      chiangmaitotal += 0;
+      salvadortotal += 2;
+      egypttotal += 3;
+      madridtotal += 1;
     }
 
     //active question//
 
     if (active === 'v-active') {
-      points += 4;
+      chiangmaitotal += 3;
+      salvadortotal += 1;
+      egypttotal += 0;
+      madridtotal += 2;
     }
 
     else if (active === 'm-active') {
-      points += 2;
+      chiangmaitotal += 2;
+      salvadortotal += 1;
+      egypttotal += 0;
+      madridtotal += 3;
     }
 
     else if (active === 'n-active') {
-      points += 1;
+      chiangmaitotal += 0;
+      salvadortotal += 3;
+      egypttotal += 2;
+      madridtotal += 1;
     }
 
     else {
-      points += 3;
+      chiangmaitotal += 0;
+      salvadortotal += 2;
+      egypttotal += 3;
+      madridtotal += 1;
     }
 
     //monkey question//
 
     if (monkey === 'bornean-orangutan') {
-      points += 4;
+      chiangmaitotal += 3;
+      salvadortotal += 2;
+      egypttotal += 1;
+      madridtotal += 0;
     }
 
     else if (monkey === 'barbary-macaque') {
-      points += 2;
+      chiangmaitotal += 1;
+      salvadortotal += 0;
+      egypttotal += 2;
+      madridtotal += 3;
     }
 
     else if (monkey === 'spider-monkey') {
-      points += 1;
+      chiangmaitotal += 2;
+      salvadortotal += 3;
+      egypttotal += 1;
+      madridtotal += 0;
     }
 
     else {
-      points += 3;
+      chiangmaitotal += 2;
+      salvadortotal += 1;
+      egypttotal += 3;
+      madridtotal += 0;
     }
 
     //carbs question//
 
     if (carbs === 'rice') {
-      points += 4;
+      chiangmaitotal += 3;
+      salvadortotal += 2;
+      egypttotal += 1;
+      madridtotal += 0;
     }
 
     else if (carbs === 'bread') {
-      points += 2;
+      chiangmaitotal += 0;
+      salvadortotal += 1;
+      egypttotal += 2;
+      madridtotal += 3;
     }
 
     else if (carbs === 'corn') {
-      points += 1;
+      chiangmaitotal += 0;
+      salvadortotal += 3;
+      egypttotal += 1;
+      madridtotal += 2;
     }
 
     else {
-      points += 3;
+      chiangmaitotal += 0;
+      salvadortotal += 2;
+      egypttotal += 3;
+      madridtotal += 1;
     }
 
     //celebrity question//
 
     if (celebrity === 'tonyjaa') {
-      points += 4;
+      chiangmaitotal += 3;
+      salvadortotal += 2;
+      egypttotal += 0;
+      madridtotal += 1;
     }
 
     else if (celebrity === 'penelope') {
-      points += 2;
+      chiangmaitotal += 0;
+      salvadortotal += 2;
+      egypttotal += 1;
+      madridtotal += 3;
     }
 
     else if (celebrity === 'pele') {
-      points += 1;
+      chiangmaitotal += 1;
+      salvadortotal += 3;
+      egypttotal += 0;
+      madridtotal += 2;
     }
 
     else {
-      points += 3;
+      chiangmaitotal += 1;
+      salvadortotal += 0;
+      egypttotal += 3;
+      madridtotal += 2;
     }
 
     //total points//
 
-    if (points > 15) {
+    if (chiangmaitotal > salvadortotal && chiangmaitotal > egypttotal && chiangmaitotal > madridtotal) {
       $('.results').show();
       $('.chiangmai').show();
       $('.madrid, .egypt, .salvador').hide();
     }
 
-    else if (points > 10) {
+    else if (egypttotal > salvadortotal && egypttotal > chiangmaitotal && egypttotal > madridtotal) {
       $('.results').show();
       $('.egypt').show();
       $('.madrid, .salvador, .chiangmai').hide();
     }
 
-    else if (points > 5) {
+    else if (madridtotal> salvadortotal && madridtotal> chiangmaitotal && madridtotal> egypttotal) {
       $('.results').show();
       $('.madrid').show();
       $('.salvador, .egypt, .chiangmai').hide();
